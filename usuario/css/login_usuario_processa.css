@@ -1,0 +1,120 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Corpo da página */
+.corpo_body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* Container principal */
+.main-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    align-items: center;
+}
+
+/* Container do formulário */
+.form-container {
+    background-color: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 40%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    align-items: center;
+
+}
+
+/* Grupo de campos de entrada */
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* Ícones dentro dos inputs */
+.input-group img {
+    position: absolute;
+    left: 15px;
+    width: 20px;
+    height: 20px;
+}
+
+/* Campos de input */
+.input-field {
+    width: 100%;
+    padding: 14px 14px 14px 40px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+/* Input em foco */
+.input-field:focus {
+    border-color: #3498db;
+
+}
+
+
+/* Estilo dos links */
+.link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 8px;
+    width: 50%;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+
+/* Hover dos links */
+.link:hover {
+    background-color: #2980b9;
+    transform: translateY(-3px);
+}
+
+/* Ícones dos links */
+.link img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* Hover nos ícones */
+.link:hover img {
+    transform: scale(1.1);
+}
+
+/* Estilo do título */
+.font {
+    font-family: 'Lucida Sans', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: red;
+    margin-top: 10px;
+}

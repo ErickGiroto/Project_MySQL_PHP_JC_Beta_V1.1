@@ -1,0 +1,160 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Corpo da página */
+.corpo_body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+/* Container principal */
+.main-container {
+    width: 100%;
+
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Título */
+h2 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Estilo da tabela */
+.tabela-consulta {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* Cabeçalho da tabela */
+.tabela-consulta th {
+    background-color: #3498db;
+    color: white;
+    font-size: 14px;
+    padding: 12px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+/* Células da tabela */
+.tabela-consulta td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+    white-space: nowrap;
+}
+
+/* Estilo dos botões de ação */
+.btn-editar,
+.btn-excluir {
+    display: inline-block;
+    padding: 6px 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    margin: 2px;
+}
+
+/* Botão Editar */
+.btn-editar {
+    background-color: #27ae60;
+}
+
+.btn-editar:hover {
+    background-color: #219150;
+}
+
+/* Botão Excluir */
+.btn-excluir {
+    background-color: #e74c3c;
+}
+
+.btn-excluir:hover {
+    background-color: #c0392b;
+}
+
+/* Container do botão Voltar */
+.button-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Estilo do botão Voltar */
+.button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.button img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.button:hover {
+    background-color: #2980b9;
+    transform: translateY(-3px);
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .main-container {
+        padding: 20px;
+    }
+
+    .tabela-consulta {
+        font-size: 12px;
+    }
+
+    .tabela-consulta th,
+    .tabela-consulta td {
+        padding: 8px;
+    }
+
+    .btn-editar,
+    .btn-excluir {
+        font-size: 10px;
+        padding: 4px 8px;
+    }
+
+    .button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}

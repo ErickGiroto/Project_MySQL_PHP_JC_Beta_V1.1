@@ -1,0 +1,75 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Corpo da página */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+/* Container principal */
+.main-container {
+    background-color: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Estilo do título */
+.main-container h2 {
+    font-family: 'Lucida Sans', sans-serif;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilo dos links */
+.main-container a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    width: 100%;
+}
+
+/* Hover dos links */
+.main-container a:hover {
+    background-color: #2980b9;
+    transform: translateY(-3px);
+}
+
+/* Mensagem de erro */
+.main-container h2.error {
+    color: #e74c3c;
+}
+
+/* Mensagem de sucesso */
+.main-container h2.success {
+    color: #2ecc71;
+}
+
+.sucesso {
+    color: rgb(7, 95, 7);
+}
+
+.errorcadastro {
+    color: rgb(176, 10, 10);
+}
