@@ -90,7 +90,7 @@ $tipo_usuario = $_SESSION['tipo_usuario'];
                     Cadastrar Pedidos
                 </a>
 
-                <a href="/usuario/gerencia/consulta_pedido.php">
+                <a href="#">
                     <img src="/midias/image/icon/icone_busca.png" alt="Consulta Pedidos">
                     Consulta Pedidos
                 </a>
@@ -131,12 +131,12 @@ $tipo_usuario = $_SESSION['tipo_usuario'];
                     Consulta Funcionário
                 </a>
 
-                <a href="/usuario/gerencia/cadastro_usuario.php">
+                <a href="#">
                     <img src="/midias/image/icon/icone_cadastro_usuario.png" alt="Cadastrar Usuário">
                     Cadastrar Usuário
                 </a>
 
-                <a href="/usuario/gerencia/consulta_usuario.php">
+                <a href="#">
                     <img src="/midias/image/icon/icone_consulta_usuario.png" alt="Consulta Usuário">
                     Consulta Usuário
                 </a>
@@ -175,12 +175,12 @@ $tipo_usuario = $_SESSION['tipo_usuario'];
         <div class="button-container">
             <!---------------------Grupo 01---------------------->
             <div class="button-container_admin">
-                <a href="/usuario/estoque/cadastra_produto_tipo.php">
+                <a href="#">
                     <img src="/midias/image/icon/icone_estoque_cadastro.png" alt="Cadastrar Tipos de Produtos">
                     Cadastrar Tipos de Produtos
                 </a>
 
-                <a href="/usuario/estoque/consulta_produto_tipo.php">
+                <a href="#">
                     <img src="/midias/image/icon/icone_estoque_busca.png" alt="Consulta Tipos de Produtos">
                     Consulta Tipos de Produtos
                 </a>
@@ -188,7 +188,7 @@ $tipo_usuario = $_SESSION['tipo_usuario'];
 
              <!---------------------Grupo 02---------------------->
             <div class="button-container_admin">
-                <a href="/usuario/estoque/cadastro_produto_estoque.php">
+                <a href="#">
                     <img src="/midias/image/icon/icone_estoque_cadastro.png" alt="Cadastrar Produtos">
                     Cadastrar Produtos
                 </a>
