@@ -39,18 +39,26 @@ $conn->close();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consulta de Pedidos</title>
-    <link rel="stylesheet" href="/usuario/admin/css/comercial/consulta_pedido_filtro.css">
+    <title>Ordens de Serviços</title>
+    <link rel="stylesheet" href="/usuario/funcionario/css/consulta_pedido_filtro.css">
 </head>
 <body class="corpo_body">
     <div class="main-container">
-        <h2 class="h2format">Imprimir Pedidos</h2>
+        <h2 class="h2format">Ordens de Serviços</h2>
         
         <!-- Formulário de pesquisa por número de pedido -->
         <form method="GET" action="consulta_pedido_filtro_processa.php">
-            <label for="num_pedido">Número do Pedido:</label>
-            <input type="text" id="num_pedido" name="num_pedido" value="<?= htmlspecialchars($num_pedido) ?>" placeholder="Digite o número do pedido" required>
-            <button type="submit">Pesquisar</button>
+            <div class="button-container">
+                <div class="form-container">
+                    <div class="form-row">
+                        <label for="num_pedido">Número do Pedido:</label>
+                        <input type="text" id="num_pedido" name="num_pedido" value="<?= htmlspecialchars($num_pedido) ?>" placeholder="Digite o número do pedido" required class="input-field">
+                    </div>
+                </div>
+                <button class="button button-pesquisar" type="submit">
+                    <img src="/midias/image/icon/icone_pesquisar.png" alt="Pesquisar"> Pesquisar
+                </button>
+            </div>
         </form>
 
         <!-- Exibe os resultados da pesquisa -->
@@ -78,7 +86,7 @@ $conn->close();
                         <?php if ($result && $result->num_rows > 0) : ?>
                             <?php while ($row = $result->fetch_assoc()) : ?>
                                 <tr>
-                                    <td><?= htmlspecialchars($row['num_pedido']) ?></td>
+                                <td><?= htmlspecialchars($row['num_pedido']) ?></td>
                                     <td><?= htmlspecialchars($row['razao_social']) ?></td>
                                     <td><?= htmlspecialchars($row['cnpj']) ?></td>
                                     <td><?= htmlspecialchars($row['produto']) ?></td>
@@ -112,8 +120,9 @@ $conn->close();
             <?php endif; ?>
         <?php endif; ?>
 
+        <!-- Botão de Voltar -->
         <div class="button-container">
-            <button class="button" onclick="window.location.href='/usuario/admin/comercial/menu_comercial.php'">
+            <button class="button" onclick="window.location.href='/usuario/portal_usuario.php'">
                 <img src="/midias/image/icon/icone_voltar.png" alt="Voltar"> Voltar
             </button>
         </div>

@@ -67,56 +67,15 @@ td {
     white-space: nowrap;
 }
 
-/* Estilo comum para todos os botões */
-.edit-link,
-.delete-link,
-.filhos-link {
-    display: inline-block;
-    padding: 6px 10px;
-    text-decoration: none;
-    color: white;
-    font-size: 12px;
-    border-radius: 6px;
-    transition: background-color 0.3s ease;
-    border: none;
-    margin: 2px;
-}
-
-/* Botão Editar */
-.edit-link {
-    background-color: #27ae60;
-}
-
-.edit-link:hover {
-    background-color: #219150;
-}
-
-/* Botão Excluir */
-.delete-link {
-    background-color: #e74c3c;
-}
-
-.delete-link:hover {
-    background-color: #c0392b;
-}
-
-/* Botão de Status */
-.filhos-link {
-    background-color: #f39c12;
-}
-
-.filhos-link:hover {
-    background-color: #e67e22;
-}
-
 /* Botão Voltar */
 .button-container {
     display: flex;
     justify-content: center;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 5px;
 }
 
+/* Estilo comum para todos os botões */
 .button {
     background-color: #3498db;
     color: white;
@@ -124,17 +83,17 @@ td {
     padding: 12px;
     cursor: pointer;
     font-size: 16px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50%;
+    width: 25%;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-decoration: none;
     font-weight: bold;
+    margin: 5px;
 }
-
 
 .button img {
     width: 20px;
@@ -147,7 +106,14 @@ td {
     transform: translateY(-3px);
 }
 
+/* Estilo específico para o botão de pesquisa */
+.button-pesquisar {
+    margin-top: 20px;
+    width: 20%;
+    height: 10%;
 
+
+}
 
 /* Responsividade para telas menores */
 @media (max-width: 768px) {
@@ -164,10 +130,53 @@ td {
         padding: 8px;
     }
 
-    .edit-link,
-    .delete-link,
-    .filhos-link {
-        font-size: 10px;
-        padding: 4px 8px;
+    .button {
+        font-size: 14px;
+        padding: 10px;
     }
+
+    .button-pesquisar {
+        padding: 8px 16px;
+    }
+}
+
+/* Container do formulário */
+.form-container {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+/* Linhas do formulário */
+.form-row {
+    margin-bottom: 15px;
+}
+
+.form-row label {
+    display: block;
+    font-size: 14px;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+/* Estilo do campo de entrada de texto */
+.form-row .input-field {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #3498db;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    outline: none;
+}
+
+.form-row .input-field:focus {
+    border-color: #2980b9;
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.5);
+}
+
+/* Estilo para campos readonly */
+.form-row .input-field[readonly] {
+    background-color: #e9ecef;
+    cursor: not-allowed;
 }

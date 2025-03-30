@@ -50,77 +50,26 @@ if (isset($_GET['num_pedido'])) {
         // Conteúdo do PDF com CSS
         $html = <<<EOD
         <style>
-            h1 {
-                color: #0044cc;
-                font-family: helvetica;
-                font-size: 20px;
-                text-align: center;
-                margin-bottom: 20px;
-            }
-            h2 {
-                font-size: 16px;
-                color: #333;
-                margin-bottom: 10px;
-            }
-            table {
-                width: 100%;
-                border-collapse: collapse;
-                margin-bottom: 20px;
-            }
-            th, td {
-                border: 1px solid #000;
-                padding: 8px;
-                text-align: left;
-            }
-            th {
-                background-color: #f2f2f2;
-                font-weight: bold;
-                color: #333;
-            }
-            .destaque {
-                color: #ff0000;
-                font-weight: bold;
-            }
-            .cabecalho {
-                background-color:rgb(255, 255, 255);
-                color: #333;
-                font-size: 10px;
-            }
-            .rodape {
-                margin-top: 20px;
-                font-size: 10px;
-                text-align: center;
-                color: #666;
-            }
-            .empresa-info {
-                margin-bottom: 20px;
-                font-size: 12px;
-                line-height: 1.5;
-            }
-            .total-geral {
-                font-size: 10px;
-                font-weight: bold;
-                text-align: right;
-                margin-top: 20px;
-            }
-            .fonte {
-                font-size: 9px;
-            }
-            .info-empresa-table {
-                width: 100%;
-                border-collapse: collapse;
-                margin-bottom: 20px;
-            }
-            .info-empresa-table td {
-                padding: 5px;
-                border: none;
-            }
+            body { font-family: helvetica, sans-serif; color: #333; }
+            h1 { color: #002060; font-size: 18px; text-align: center; margin-bottom: 10px; }
+            h2 { font-size: 12px; color: #0044cc; border-bottom: 1px solid #0044cc; padding-bottom: 4px; margin-top: 20px; } 
+            .empresa-container { background-color: #f1f4ff; padding: 10px; border-radius: 5px; margin-top: 10px; }
+            .empresa-info { font-size: 11px; line-height: 1.4; color: #333; }
+            .empresa-titulo { font-size: 13px; font-weight: bold; color: #002060; }
+            table { width: 100%; border-collapse: collapse; table-layout: auto; margin-top: 20px; } 
+            th, td { padding: 6px; text-align: left; border: 1px solid #ccc; word-wrap: break-word; }
+            th { background-color: #0074cc; color: #ffffff; font-weight: bold; font-size: 10px; }
+            td { background-color: #ffffff; font-size: 9px; }
+            .destaque { color: #d9534f; font-weight: bold; }
+            .rodape { margin-top: 30px; font-size: 9px; text-align: center; color: #777; }
+            .info-empresa-table { width: 100%; border-collapse: collapse; margin-bottom: 10px; }
+            .info-empresa-table td { padding: 5px; border: none; }
         </style>
 
         <h1>Pedido #{$num_pedido}</h1>
 
-        <div class="empresa-info">
-            <h2>Informações da Empresa</h2>
+        <h2>Informações da Empresa</h2>
+        <div class="empresa-container">
             <table class="info-empresa-table">
                 <tr>
                     <td><strong>Razão Social:</strong> {$empresa['razao_social']}</td>
@@ -195,6 +144,7 @@ EOD;
 
         <div class="rodape">
             <p>Quitanda Bom Preço - Sistema de Pedidos</p>
+            <p>Gerado em: {$data_registro_formatada}</p>
         </div>
 EOD;
 

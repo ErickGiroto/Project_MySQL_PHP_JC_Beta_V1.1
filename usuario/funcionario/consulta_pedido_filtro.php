@@ -69,8 +69,7 @@ $conn->close();
                         <tr>
                             <th>Num. Pedido</th>
                             <th>Data de Entrega</th>
-                            
-                            
+                                                     
                             <th>Produto</th>
                             <th>Tipo</th>
                             <th>Quantidade</th>
@@ -85,9 +84,7 @@ $conn->close();
                             <?php while ($row = $result->fetch_assoc()) : ?>
                                 <tr>
                                     <td><?= htmlspecialchars($row['num_pedido']) ?></td>
-                                    <td><?= date('d/m/Y', strtotime($row['data_de_entrega'])) ?></td>
-                                    
-                                    
+                                    <td><?= date('d/m/Y', strtotime($row['data_de_entrega'])) ?></td>                        
                                     <td><?= htmlspecialchars($row['produto']) ?></td>
                                     <td><?= htmlspecialchars($row['tipo']) ?></td>
                                     <td><?= htmlspecialchars($row['qtd']) ?></td>
