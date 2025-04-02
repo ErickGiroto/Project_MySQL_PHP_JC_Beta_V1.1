@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (isset($_SESSION['usuario_id'])) {
-    header("Location: portal_usuario.php"); // Redireciona para o portal do usuário caso já esteja logado
+    header("Location: portal_usuario.php");
     exit;
 }
 ?>
@@ -17,17 +17,12 @@ if (isset($_SESSION['usuario_id'])) {
 </head>
 
 <body>
-
-    <!-- Título principal -->
-    <h1 class="font">Bem-vindo ao Sistema!</h1>
-
-    <div class="corpo_body">
+   
         <div class="main-container">
-
             <!-- Formulário de login -->
             <div class="form-container">
                 <form action="login_usuario_processa.php" method="POST">
-                    <h2>Login de Usuário</h2>
+                    <h2 class="login-title">Login de Usuário</h2>
                     <div class="form-row">
                         <div class="input-group">
                             <img src="/midias/image/icon/icone_email.png" alt="Ícone E-mail">
@@ -53,11 +48,8 @@ if (isset($_SESSION['usuario_id'])) {
                         Esqueceu sua senha?
                     </a>
                 </div>
-
             </div>
         </div>
-    </div>
-
+   
 </body>
-
 </html>

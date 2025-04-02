@@ -53,15 +53,7 @@ $tipo_usuario = $_SESSION['tipo_usuario'];
                     <img src="/midias/image/icon/icone_cliente_cadastro.png" alt="Cadastrar Cliente">
                     Cadastrar Cliente
                 </a>
-                 
-
-
-
-            </div>
-
-            <!---------------------Grupo 02---------------------->
-            <div class="button-container_admin">
-
+                
                 <a href="/usuario/admin/comercial/consulta_cliente.php">
                     <img src="/midias/image/icon/icone_cliente_consulta.png" alt="Consulta Cliente">
                     Consulta Cliente
@@ -75,23 +67,13 @@ $tipo_usuario = $_SESSION['tipo_usuario'];
                 <a href="/usuario/admin/comercial/consulta_empresa.php">
                     <img src="/midias/image/icon/icone_empresas_consulta.png" alt="Consulta Empresa">
                     Consulta Empresa
-                </a>
-
-               
-                
+                </a>              
 
                  <a href="#">
                     <img src="/midias/image/icon/icone_orcamento_consulta.png" alt="Consulta Orçamento">
                     Consulta Orçamento
                 </a>
 
-
-            </div>
-
-
-            <!---------------------Grupo 02---------------------->
-            <div class="button-container_admin">
-                
                 <a href="#">
                     <img src="/midias/image/icon/icone_estoque_consulta.png" alt="Consulta de Produtos">
                     Consulta de Produtos
@@ -111,6 +93,18 @@ $tipo_usuario = $_SESSION['tipo_usuario'];
                     <img src="/midias/image/icon/icone_sair.png" alt="Sair">
                     Sair
                 </a>
+
+            </div>
+
+            <!---------------------Grupo 02---------------------->
+            <div class="button-container_admin">
+
+            </div>
+
+
+            <!---------------------Grupo 02---------------------->
+            <div class="button-container_admin">      
+                
             </div>
 
         </div>

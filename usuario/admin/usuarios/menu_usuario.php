@@ -15,7 +15,7 @@ $tipo_usuario = $_SESSION['tipo_usuario'];
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Administração - Usuário</title>
-    <link rel="stylesheet" href="/usuario/admin/css/estoque/menu_estoque.css">
+    <link rel="stylesheet" href="/usuario/admin/css/usuario/menu_usuario.css">
 </head>
 
 <body>
