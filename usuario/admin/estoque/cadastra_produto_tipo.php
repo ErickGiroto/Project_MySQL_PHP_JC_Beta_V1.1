@@ -20,9 +20,6 @@ $tipo_usuario = $_SESSION['tipo_usuario'];
 
 <body>
     <div class="main-container">
-        <!-- Links à direita do formulário -->
-
-        <!-- Formulário de Cadastro de Tipo de Produto -->
         <div class="form-container">
             <h2>Cadastrar Tipo de Produto</h2>
             <form action="cadastra_produto_processa_tipo.php" method="POST">
@@ -42,11 +39,13 @@ $tipo_usuario = $_SESSION['tipo_usuario'];
                     <input class="input-field" type="text" name="tipo_alimento" placeholder="Tipo de Alimento" required>
                 </div>
 
-                <button class="submit-button" type="submit">Cadastrar</button>
-                <a class="link" href="/usuario/admin/estoque/menu_estoque.php">
-                <img src="/midias/image/icon/icone_voltar.png" alt="Voltar">
-                Voltar
-            </a>
+                <div class="button-container">
+                    <button class="submit-button" type="submit">Cadastrar</button>
+                    <a class="link" href="/usuario/admin/estoque/menu_estoque.php">
+                        <img src="/midias/image/icon/icone_voltar.png" alt="Voltar">
+                        Voltar
+                    </a>
+                </div>
             </form>
         </div>
     </div>
