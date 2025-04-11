@@ -1,0 +1,25 @@
+-Instalar o Windows Server 2019
+-Instalar os Recursos do IIS Manager
+-Instalar/Apontar o PHP realizado download no site 'Non Thread Safe' em zip
+    -Ajustar o PHP direto no C:, C:\PHP
+
+-Criar o FastCGHI dentro do IIS para o PHP atuar ná maquina
+-Apontar a Associação do 'localhost' para a porta 80 padrão
+    -Em documento add pagina inicial ou criar na pasta do projeto o index.html
+-Apontar o modulo para o FastCGHI
+
+-Liberar portas no Firewall do Windows para os clients acessar via IP
+-Fixar IP na máquina
+
+-Instalar Mysql - Server Full
+-Instalar Visual Studio Code
+-Baixar e configurar o Composer para Emissão de PDF dentro do PHP
+-Apontar dentro do Visual Studio code á pasta do projeto
+
+-Criar usuáios para gerenciar o banco de dados
+-Criar as querys dentro do banco
+-Apontar todos os arquivos para o usuário correto e banco no PHP
+
+-Criar Scritp ou Editar apontando a pasta de instalação do Mysql para backups/restauração
+
+-Criar regras e gatilhos/ações para o backup ficar automático!
